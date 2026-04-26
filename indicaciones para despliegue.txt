@@ -1,0 +1,31 @@
+¡Excelente noticia! Si ya se ve bien en tu `localhost`, significa que la estructura de archivos y el motor de **Tailwind CSS** están finalmente sincronizados.
+
+Para que tu portafolio pase de tu computadora al mundo (GitHub Pages), sigue estos 3 pasos finales en tu terminal:
+
+### 1. Guardar y Enviar a GitHub
+Asegúrate de que todos tus archivos en VS Code estén guardados (`Ctrl + S`) y ejecuta:
+```bash
+git add .
+git commit -m "Versión final funcional con Tailwind"
+git push origin main
+```
+
+### 2. Publicar la Web
+Este comando ejecutará automáticamente el `build` y subirá la carpeta `dist` a la rama de publicación:
+```bash
+npm run deploy
+```
+
+### 3. Verificar el Enlace
+En un par de minutos, tu web debería estar disponible aquí:
+👉 **[https://Pastor-E-Perez-Estigarribia.github.io/portafolio-pastor/](https://Pastor-E-Perez-Estigarribia.github.io/portafolio-pastor/)**
+
+---
+
+### Alternativas para perfeccionar tu portafolio:
+
+* **A. Pulido Estético (Claude 3.5 Sonnet):** Ahora que la base funciona, este modelo es el mejor para pedirle "micro-interacciones" (ej. que las tarjetas se eleven suavemente al pasar el mouse o añadir gradientes más modernos).
+* **B. Automatización (GitHub Actions):** Si no quieres escribir `npm run deploy` cada vez, podemos crear un archivo `.yml` para que la web se actualice sola con cada `git push`.
+* **C. Personalización de Imagen:** Actualmente usas un avatar de "PP". Si tienes tu foto lista en la carpeta `public`, podemos actualizar la línea 154 de `Portafolio_Pastor.jsx` para que sea tu imagen real.
+
+¿Qué te gustaría ajustar primero una vez que verifiques el enlace en vivo?
